@@ -6,110 +6,544 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Samuel Roberto's developer portfolio and software projects.">
+        content="Samuel Roberto builds custom, responsive websites for small businesses in Memphis, Tennessee and surrounding areas.">
 
-    <title>Samuel Roberto | Developer Portfolio</title>
+    <meta name="theme-color" content="#111318">
+
+    <title>Samuel Roberto | Web Developer for Local Businesses</title>
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="site-header">
-        <a class="logo" href="#home">SR<span>.</span></a>
 
-        <nav aria-label="Main navigation">
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Samuel Roberto home">
+            SR<span>.</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="main-nav" aria-label="Main navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#process">My Process</a>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a class="nav-contact" href="#contact">Start a Project</a>
         </nav>
     </header>
 
     <main>
+
+        <!-- HERO -->
         <section class="hero" id="home">
-            <p class="eyebrow">DEVELOPER PORTFOLIO</p>
+            <div class="hero-content">
+                <p class="eyebrow">INDEPENDENT WEB DEVELOPER · MEMPHIS, TN</p>
 
-            <h1>Hi, I'm Samuel.<br>
-                I build useful digital experiences.</h1>
+                <h1>
+                    Websites built around
+                    <span>your business.</span>
+                </h1>
 
-            <p class="hero-description">
-                Computer science graduate interested in web development,
-                software engineering, and building useful digital experiences.
-            </p>
+                <p class="hero-description">
+                    I design and develop custom websites for local businesses
+                    looking to build their online presence, connect with
+                    customers, and grow.
+                </p>
 
-            <div class="hero-actions">
-                <a class="button primary" href="#projects">
-                    View my work
-                </a>
-                <a class="button secondary" href="#contact">
-                    Get in touch
-                </a>
+                <div class="hero-actions">
+                    <a class="button primary" href="#contact">
+                        Let's Discuss Your Project
+                    </a>
+                    <a class="button secondary" href="#projects">
+                        Explore My Work
+                    </a>
+                </div>
+
+                <p class="location-note">
+                    <span class="location-dot"></span>
+                    Serving Memphis and surrounding areas
+                </p>
+            </div>
+
+            <div class="hero-card">
+                <p class="hero-card-label">WHAT I DO</p>
+                <div class="hero-card-item">
+                    <span>01</span>
+                    <strong>Custom Websites</strong>
+                </div>
+                <div class="hero-card-item">
+                    <span>02</span>
+                    <strong>Interactive Features</strong>
+                </div>
+                <div class="hero-card-item">
+                    <span>03</span>
+                    <strong>Booking & Forms</strong>
+                </div>
+                <div class="hero-card-item">
+                    <span>04</span>
+                    <strong>Website Maintenance</strong>
+                </div>
+                <p class="hero-card-footer">
+                    Thoughtful design. Practical solutions.
+                </p>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <p class="eyebrow">A LITTLE ABOUT ME</p>
-            <h2>Building, learning, and improving.</h2>
+        <!-- INTRODUCTION -->
+        <section class="intro-strip">
             <p>
-                I'm a computer science graduate who enjoys turning ideas
-                into working projects. I'm currently developing my skills
-                through hands-on web development and software projects.
+                Helping small businesses make a strong first impression online.
             </p>
         </section>
 
-        <section id="projects" class="section">
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2>Projects I've been building</h2>
+        <!-- SERVICES -->
+        <section class="section" id="services">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I OFFER</p>
+                <h2>Websites that work for your business.</h2>
+                <p>
+                    Every business has different needs. I build websites
+                    around your goals, customers, and services.
+                </p>
+            </div>
+
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <span class="service-number">01</span>
+                    <h3>Business Websites</h3>
+                    <p>
+                        Professional websites that introduce your business,
+                        showcase your services, and help customers find you.
+                    </p>
+                    <span class="service-tag">Custom Design · Mobile Friendly</span>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">02</span>
+                    <h3>Interactive Websites</h3>
+                    <p>
+                        Useful features such as galleries, menus, search,
+                        filters, custom forms, and interactive elements.
+                    </p>
+                    <span class="service-tag">HTML · CSS · JavaScript</span>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">03</span>
+                    <h3>Booking & Scheduling</h3>
+                    <p>
+                        Appointment request forms, date selection,
+                        scheduling interfaces, and management features.
+                    </p>
+                    <span class="service-tag">Custom Functionality</span>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">04</span>
+                    <h3>Website Maintenance</h3>
+                    <p>
+                        Website updates, troubleshooting, content changes,
+                        and ongoing technical support.
+                    </p>
+                    <span class="service-tag">Ongoing Support</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Projects I've brought to life.</h2>
+                <p>
+                    A selection of business websites, applications,
+                    and technical projects.
+                </p>
+            </div>
 
             <div class="project-grid">
-                <article class="project-card">
-                    <p class="project-type">WEB DEVELOPMENT</p>
-                    <h3>La Costa Ice Cream Shop</h3>
-                    <p>A website project for a local ice cream business.</p>
+
+                <article class="project-card featured-project">
+                    <div class="project-preview victory-preview">
+                        <span class="preview-label">FEATURED PROJECT</span>
+                        <div class="preview-content">
+                            <span class="preview-small">VICTORY AUTO SALES</span>
+                            <strong>Find your next vehicle.</strong>
+                            <span class="preview-line"></span>
+                            <span class="preview-cars">VEHICLE INVENTORY</span>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <p class="project-type">CLIENT PROJECT · AUTOMOTIVE</p>
+                        <h3>Victory Auto Sales & Repair</h3>
+                        <p>
+                            A dealership website designed to showcase
+                            available vehicles, provide business information,
+                            and let customers request test drives.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Cloudflare</span>
+                        </div>
+                        <a class="project-link"
+                            href="https://victory-auto-sales.pages.dev/"
+                            target="_blank" rel="noopener noreferrer">
+                            Visit Live Website →
+                        </a>
+                    </div>
                 </article>
 
                 <article class="project-card">
-                    <p class="project-type">WEB APPLICATION</p>
-                    <h3>Justin Hair Studio</h3>
-                    <p>A salon website with appointment management features.</p>
+                    <div class="project-preview costa-preview">
+                        <div class="preview-content">
+                            <span class="preview-small">LA COSTA</span>
+                            <strong>A little sweetness goes a long way.</strong>
+                            <span class="preview-cars">ICE CREAM & TREATS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <p class="project-type">BUSINESS WEBSITE</p>
+                        <h3>La Costa Ice Cream Shop</h3>
+                        <p>
+                            A customer-facing website project featuring
+                            a menu, product displays, business information,
+                            and online shopping functionality under development.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <span class="project-status">Project in development</span>
+                    </div>
                 </article>
 
                 <article class="project-card">
-                    <p class="project-type">IT LAB</p>
-                    <h3>Active Directory Lab</h3>
-                    <p>A hands-on project exploring Windows administration.</p>
+                    <div class="project-preview salon-preview">
+                        <div class="preview-content">
+                            <span class="preview-small">JUSTIN HAIR STUDIO</span>
+                            <strong>Your style. Your appointment.</strong>
+                            <span class="preview-cars">BOOKING EXPERIENCE</span>
+                        </div>
+                    </div>
+
+                    <div class="project-details">
+                        <p class="project-type">WEB APPLICATION</p>
+                        <h3>Justin Hair Studio</h3>
+                        <p>
+                            A salon website concept featuring service
+                            selection, appointment scheduling, and
+                            appointment management.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <span class="project-status">Development project</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="additional-projects">
+                <p class="eyebrow">MORE OF MY WORK</p>
+                <h3>Additional Development Projects</h3>
+
+                <div class="additional-grid">
+                    <article>
+                        <h4>NanoTV</h4>
+                        <p>
+                            A retro-inspired smart television project
+                            combining hardware and software.
+                        </p>
+                        <span>Hardware · Software</span>
+                    </article>
+
+                    <article>
+                        <h4>Active Directory Lab</h4>
+                        <p>
+                            Hands-on Windows Server and domain
+                            administration practice.
+                        </p>
+                        <span>Windows Server · IT Administration</span>
+                    </article>
+
+                    <article>
+                        <h4>Python Applications</h4>
+                        <p>
+                            Small applications including a quiz,
+                            bingo generator, and task manager.
+                        </p>
+                        <span>Python · Programming</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY WORK WITH ME -->
+        <section class="section why-section">
+            <div class="section-heading">
+                <p class="eyebrow">THE DIFFERENCE</p>
+                <h2>A personal approach to web development.</h2>
+            </div>
+
+            <div class="why-grid">
+                <article>
+                    <h3>Direct Communication</h3>
+                    <p>
+                        Work directly with the developer building
+                        your website. No complicated agency process.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Built Around Your Needs</h3>
+                    <p>
+                        Your website should reflect your business
+                        and serve the customers you're trying to reach.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Support Beyond Launch</h3>
+                    <p>
+                        Get help with updates, improvements,
+                        and technical issues after your website goes live.
+                    </p>
                 </article>
             </div>
         </section>
 
-        <section id="skills" class="section">
-            <p class="eyebrow">MY TOOLKIT</p>
-            <h2>Technologies I work with</h2>
+        <!-- PROCESS -->
+        <section class="section" id="process">
+            <div class="section-heading">
+                <p class="eyebrow">HOW IT WORKS</p>
+                <h2>From idea to launch.</h2>
+                <p>
+                    A straightforward process that keeps you informed
+                    throughout development.
+                </p>
+            </div>
+
+            <div class="process-list">
+                <article>
+                    <span>01</span>
+                    <div>
+                        <h3>Discovery</h3>
+                        <p>We discuss your business, goals, and website needs.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <div>
+                        <h3>Planning & Proposal</h3>
+                        <p>We agree on the features, design, timeline, and price.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <div>
+                        <h3>Design & Development</h3>
+                        <p>I build your website and share progress for review.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>04</span>
+                    <div>
+                        <h3>Testing & Launch</h3>
+                        <p>Your website is tested before it goes live.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <span>05</span>
+                    <div>
+                        <h3>Ongoing Support</h3>
+                        <p>We can arrange maintenance and future improvements.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="about-content">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>Technology with a personal touch.</h2>
+                <p>
+                    I'm Samuel Roberto, an independent web developer
+                    with a Bachelor of Science in Computer Science
+                    from the University of Memphis.
+                </p>
+                <p>
+                    I enjoy turning ideas into practical, working
+                    websites and applications. My approach combines
+                    technical knowledge, thoughtful design, and
+                    a focus on the needs of each business.
+                </p>
+                <p>
+                    I'm based in the Memphis area and work directly
+                    with local business owners to bring their ideas online.
+                </p>
+            </div>
+
+            <div class="about-highlight">
+                <span>MY APPROACH</span>
+                <strong>Understand the business. Build the right solution.</strong>
+                <p>Every project starts with a conversation.</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">MY TOOLKIT</p>
+                <h2>Technologies I work with.</h2>
+            </div>
+
             <div class="skill-list">
-                <span>HTML</span>
-                <span>CSS</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
                 <span>JavaScript</span>
                 <span>Python</span>
                 <span>Java</span>
                 <span>SQL</span>
                 <span>Git</span>
                 <span>GitHub</span>
+                <span>Cloudflare</span>
+                <span>Responsive Design</span>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <p class="eyebrow">CONTACT</p>
-            <h2>Let's connect.</h2>
-            <p>
-                Interested in working together or discussing a project?
-                Get in touch.
-            </p>
-            <p>Contact form coming in the next development stage.</p>
+        <!-- FAQ -->
+        <section class="section faq-section" id="faq">
+            <div class="section-heading">
+                <p class="eyebrow">COMMON QUESTIONS</p>
+                <h2>Good to know before we start.</h2>
+            </div>
+
+            <details>
+                <summary>How much does a website cost?</summary>
+                <p>
+                    Pricing depends on the size and functionality
+                    of your project. After discussing your needs,
+                    I'll provide a proposal with a clear price.
+                </p>
+            </details>
+
+            <details>
+                <summary>How long does development take?</summary>
+                <p>
+                    Timelines depend on the number of pages,
+                    requested features, and how quickly content
+                    and feedback are provided.
+                </p>
+            </details>
+
+            <details>
+                <summary>Will my website work on phones?</summary>
+                <p>
+                    Yes. Responsive design is part of my website
+                    development approach, so the layout is designed
+                    to work across phones, tablets, and computers.
+                </p>
+            </details>
+
+            <details>
+                <summary>Can you update my website after launch?</summary>
+                <p>
+                    Yes. Maintenance and additional improvements
+                    can be arranged separately.
+                </p>
+            </details>
+
+            <details>
+                <summary>Do I need to purchase a domain?</summary>
+                <p>
+                    A custom domain is recommended for a professional
+                    business website. I can help with the setup.
+                    Domain and hosting costs will be explained
+                    before the project begins.
+                </p>
+            </details>
         </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+            <div class="contact-content">
+                <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+                <h2>Let's build something for your business.</h2>
+                <p>
+                    Tell me a little about your business and what
+                    you'd like your website to accomplish.
+                    I'll be in touch to discuss the next steps.
+                </p>
+            </div>
+
+            <form class="contact-form"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST">
+
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name"
+                    autocomplete="name" required>
+
+                <label for="business">Business name</label>
+                <input type="text" id="business" name="business">
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email"
+                    autocomplete="email" required>
+
+                <label for="project-type">What are you looking for?</label>
+                <select id="project-type" name="project_type" required>
+                    <option value="">Select a service</option>
+                    <option>New Business Website</option>
+                    <option>Website Redesign</option>
+                    <option>Appointment Booking</option>
+                    <option>Interactive Website Features</option>
+                    <option>Website Maintenance</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="message">Tell me about your project</label>
+                <textarea id="message" name="message" rows="5"
+                    required></textarea>
+
+                <button class="button primary" type="submit">
+                    Send Project Inquiry
+                </button>
+
+                <p class="form-note">
+                    No obligation. Let's start with a conversation.
+                </p>
+            </form>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Samuel Roberto</p>
+    <footer class="site-footer">
+        <a class="logo" href="#home">SR<span>.</span></a>
+        <p>Samuel Roberto · Independent Web Developer</p>
+        <p>Memphis, Tennessee & surrounding areas</p>
+        <p>&copy; <span id="year"></span> Samuel Roberto. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
